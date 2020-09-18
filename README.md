@@ -4,6 +4,9 @@ CURD File made with class generate dynamic query for insert,update and delete.
 This project contain two file first is insertClassFile.php and second is index.php
 
 insertClassFile.php
+
+
+
 // you need to include these file on your project 
 // don't do any changes on it.
 
