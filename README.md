@@ -6,10 +6,10 @@ This project contain two file first is insertClassFile.php and second is index.p
 1. insertClassFile.php
 
 
-* you need to include these file on your project 
+* You need to include these file on your project 
 
 
-* don't do any changes on it.
+* Don't do any changes on it.
 
 2. index.php
 
