@@ -35,9 +35,9 @@ Example :-
 After these, use insertQuery() these is class name and get_insertQuery() is a method
 
 
+* get_insertQuery() is a method where insert query generate dynamically.
 
 
-    * get_insertQuery() is a method where insert query generate dynamically.
 	
 	
     $insert = new insertQuery($tablename,$column,$value);
