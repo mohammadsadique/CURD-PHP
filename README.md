@@ -32,13 +32,12 @@ Example :-
     $value = "'$role','$name','$email','$pass'";
 	
 	
-// After these
+After these, use insertQuery() these is class name and get_insertQuery() is a method
 
 
-// insertQuery is a class name
 
 
-    // get_insertQuery is a method where insert query generate dynamically.
+    * get_insertQuery() is a method where insert query generate dynamically.
 	
 	
     $insert = new insertQuery($tablename,$column,$value);
