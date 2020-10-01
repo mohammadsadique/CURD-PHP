@@ -50,7 +50,7 @@ After these, use insertQuery() these is class name and get_insertQuery() is a me
 # Example 2
 
 
-Example :-
+Example (INSERT) :-
 
 
     $tablename = "xyz";
@@ -62,10 +62,29 @@ Example :-
         );
 	
 	
-   $inst2 = new InsertQuery();
-        $inst2->setInsert($tablename,$array);
-        $logins2 = $inst2->get_insertQuery();
+	   $inst2 = new InsertQuery();
+	   $inst2->setInsert($tablename,$array);
+	   $logins2 = $inst2->get_insertQuery();
 	
 	
 	
 	
+	
+	
+
+Example (UPDATE) :-
+
+
+    $tablename = "xyz";
+	
+	
+    $array = array(
+            'name' => secureData('name'),
+            'email' => secureData('email')
+        );
+	$whereclause = "`id` = '25'";
+	
+	
+	   $up = new updateQuery();
+        $up->setUpdate($tablename,$array,$whereclause);
+        $value = $up->get_updateQuery();
