@@ -1,4 +1,6 @@
 # CURD-PHP
+
+# Example 1
 CURD File made with class generate dynamic query for insert,update and delete. 
 
 This project contain two file first is insertClassFile.php and second is index.php
@@ -41,6 +43,28 @@ After these, use insertQuery() these is class name and get_insertQuery() is a me
 		echo $value = $insert->get_insertQuery();
 	
 	
+	
+	
+	
+
+# Example 2
+
+
+Example :-
+
+
+    $tablename = "xyz";
+	
+	
+    $array = array(
+            'name' => secureData('name'),
+            'email' => secureData('email')
+        );
+	
+	
+   $inst2 = new InsertQuery();
+        $inst2->setInsert($tablename,$array);
+        $logins2 = $inst2->get_insertQuery();
 	
 	
 	
